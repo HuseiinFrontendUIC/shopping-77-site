@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <link rel="stylesheet" href="./css/index.css">
+
+ <style>
+  body{
+    background-color: #e1e2e4;
+  }
+  .alert {
+   width: 378px;
+   padding: 20px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   gap: 20px;
+   border-radius: 12px;
+   background: #fff;
+   margin-right: auto;
+   margin-left: auto;
+  
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  .password_img{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 59px;
+  }
+  .zayavka_heading{
+   color: #16191D;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 130%;
+   margin-top: 20px;
+  }
+  .password_text{
+    color:#8E9297;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 15px;
+  }
+  .password_btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  </style>
+
+
+</head>
+<body>
+
+<div class="container">
+ <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <img src="./img/zayavka.svg" alt="password" class="password_img">
+  <h2 class="zayavka_heading">Ваша заявка принята!</h2>
+  <p class="password_text">Наши сотрудники свяжутся с вами в <br> ближайшее время</p>
+
+  <a class="password_btn podat-zayavku-btn" href="./index.html">Спасибо</a>
+</div>
+</div>
+
+</body>
+</html>

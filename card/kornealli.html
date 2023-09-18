@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kornealli</title>
+
+  <!-- fontAwesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- box icon css -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!-- link normalize -->
+  <link rel="stylesheet" href="../css/normalize.css">
+
+  
+  <!-- index__css link -->
+  <link rel="stylesheet" href="../css/index.css">
+  
+  <!-- card css link -->
+  <link rel="stylesheet" href="./card.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- header_start -->
+
+  <header id="header">
+    <nav class="header__nav nav">
+      <div class="dropdownCall-general-box">
+
+        <!-- dropdown_language_start -->
+
+        <div class="mt-10">
+          <button class="dropdownLanguage" id="btnLanguage">
+            <img src="../img/russianFlag.png" class="ruFlag" alt="userImg">
+            <p class="languageText">Русский</p>
+            <p class="languageText languageText-responsive">Ру</p>
+            <i class="bx bx-chevron-down" id="arrowLanguage"></i>
+          </button>
+
+
+          <div class="dropdownLanguage-box" id="dropdownLanguageBox">
+
+            <a href="../index.html" class="dropdownLanguage-linkBox">
+              <img src="../img/russianFlag.png" class="ruFlag" alt="exit">
+              <p class="languageText">Русский</p>
+              <p class="languageText languageText-responsive">Ру</p>
+            </a>
+
+            <hr class="dropdown_hr">
+
+            <a href="../index.html" class="dropdownLanguage-linkBox">
+              <img src="../img/flaguz.png" class="ruFlag" alt="exit">
+              <p class="languageText">O’zbekcha</p>
+              <p class="languageText languageText-responsive">O'z</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- dropdown_language_end -->
+
+        <!-- nav_call_start -->
+        <a class="nav__call" href="tel:+998885005000">
+          <img class="nav__call__img" src="../img/phone.svg" alt="call"> +998 88 500 50 00
+        </a>
+
+        <!-- nav_call_end -->
+
+      </div>
+
+      <!-- languageСall_end -->
+
+      <a href="/" class="nav-logo-ink nav-logo">
+        <img src="../img/logo.jpg" alt="logo" class="nav-logo__img">
+      </a>
+
+      <div class="btnGroups">
+        <button class="btn show-btn" id="show-btn">
+          Войти <img src="../img/exit.svg" alt="arrow" class="arrow">
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- header_end -->
+
+    <!-- MODAL_start -->
+
+    <div class="wrapper">
+      <div class="modal hidden" id="modal">
+        <!-- MODAL HEADER -->
+
+        <div class="modal-header">
+          <h3 class="modal-title">Подать заявку</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <p class="modal__text">
+          Войти в систему чтобы торговать в системе
+        </p>
+        <br>
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+          <form action="">
+            <label for="name">
+              Ф.И.О.
+              <br>
+              <input type="text" class="modalInput" placeholder="Введите полное имя" id="name" name="name"
+                required max-length="15" minlength="4">
+            </label>
+            <br>
+
+            <label for="product">
+              Название продукта
+              <br>
+              <input type="text" class="modalInput" placeholder="Введите название продукта" id="product"
+                name="product" required max-length="15" minlength="4">
+            </label>
+            <br>
+
+
+            <label for="pet-select">Категория</label>
+            <br>
+            <select name="pets" id="pet-select" class="category_modal modalInput">
+              <option value="">Выберите категорию</option>
+              <option value="Холодильники" class="option-modal">Холодильники</option>
+              <option value="Телевизоры" class="option-modal">Телевизоры</option>
+              <option value="Наушники и аксессуары" class="option-modal">Наушники и аксессуары</option>
+              <option value="Кухонная мебель" class="option-modal">Кухонная мебель</option>
+              <option value="Телефоны" class="option-modal">Телефоны</option>
+              <option value="Бытовая техника" class="option-modal">Бытовая техника</option>
+            </select>
+            <br>
+            <label for="number">
+              Номер телефона
+              <br>
+
+              <input type="number" class="modalInput" placeholder="+998 00-000-00-00" id="number"
+                name="numberPhone" required max="15" min="12">
+            </label>
+            <br>
+            <label for="email">
+              Электронная почта
+              <br>
+
+              <input type="email" class="modalInput" placeholder="example@uic.group" id="email" name="email"
+                required max-length="15" minlength="4">
+            </label>
+            <br>
+            <a href="./zayavku.html" class="podat-zayavku-btn">Подать заявку</a>
+
+            <p class="modal_btn_text">Если вы продавец, войдите на платформу</p>
+
+          </form>
+
+          <button id="myBtn" class="podat-zayavku-btn voyti_btn">Войти</button>
+
+          <!-- voyti_btn_start -->
+
+
+
+
+        </div>
+      </div>
+      <div id="myModal" class="modal hidden">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-box">
+            <h2 class="modal-title">Добро пожаловать!</h2>
+            <span class="close">&times;</span>
+          </div>
+
+          <p class="modal__text">Войти в систему чтобы торговать в системе</p>
+          <br>
+
+          <form name="login">
+            <label for="name">
+              Логин
+              <br>
+              <input type="text" class="modalInput" placeholder="Введите логин" required id="name" name="id"
+                maxlength="15" minlength="4">
+            </label>
+            <br>
+
+            <label for="product">
+              Пароль
+              <br>
+              <input name="pass" class="modalInput" type="password" value="uicGroup" id="myInput" maxlength="15"
+                minlength="8" required>
+              <!-- <i class='bx bxs-low-visio/n' ></i> -->
+              <i class="fa-solid fa-eye-low-vision" id="showeye"></i>
+
+            </label>
+
+
+            <a href="./password.html" class="zabil_password">Забыли пароль?</a>
+
+            <input type="button" class="podat-zayavku-btn" value="Войти" onClick="pasuser(this.form)">
+
+            <p class="modal_btn_text">Хотите стать продавцом?</p>
+
+            <button type="submit" class="podat-zayavku-btn voyti_btn" id="btnProfile">Подать заявку</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <!-- The Modal -->
+
+
+    <!-- voyti_btn_start -->
+
+    <!-- OVERLAY -->
+    <div class="overlay hidden" id="overlay">
+
+    </div>
+
+    <!-- MODAL_end -->
+
+    <!-- zabil_password_start -->
+
+  
+  
+    <!-- main_start -->
+  <main>
+
+    <!-- grid_start -->
+
+    <div class="grid-container">
+
+
+      <!-- grid-item1_start -->
+      <div class="grid-item item1">
+        <div class="slider-box">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img class="big__img" src="../img/kepka1.png"
+              >
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img class="big__img" src="../img/kepka2.png"
+              >
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img class="big__img" src="../img/kepka6.png"
+              >
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img class="big__img" src="../img/kepka3.png"
+              >
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img class="big__img" src="../img/kepka4.png"
+              >
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img class="big__img" src="../img/kepka5.png"
+              >
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor small_img" src="../img/kepka1.png"
+                 onclick="currentSlide(1)"
+                alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor small_img" src="../img/kepka2.png"
+                 onclick="currentSlide(2)"
+                alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor small_img" src="../img/kepka2.png"
+                 onclick="currentSlide(3)"
+                alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor small_img" src="../img/kepka3.png"
+                 onclick="currentSlide(4)"
+                alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor small_img" src="../img/kepka4.png"
+                 onclick="currentSlide(5)"
+                alt="Nature and sunrise">
+            </div>
+            <div class="column">
+              <img class="demo cursor small_img" src="../img/kepka5.png"
+                 onclick="currentSlide(6)"
+                alt="Snowy Mountains">
+            </div>
+          </div>
+
+
+          <p class="product-chaining">Электроника > <span class="product-chaining">Фены</span></p>
+          <h2 class="product-heading">Стайлер для волос Dyson Airwrap Complete Long в цветe Vinca blue и Rose</h2>
+
+          <div class="time_location">
+            <p class="obyavleniya__location kornealli__location">Вчера, 19:20</p>
+            <p class="obyavleniya__location kornealli__location">г. Самарканд</p>
+          </div>
+
+          <div class="sena_calBtn">
+            <p class="obyavleniya__price">6 520 000 <span class="obyavleniya__price__span">UZS</span></p>
+
+            <a href="tel:998712007007" class="podat-zayavku-btn podat-zayavku-btn-corneali">+998 71 200 70 07 <img src="../img/call.svg" alt="call"
+                class="call_btn">
+              </a>
+          </div>
+
+        </div>
+
+
+        <!-- slider-img-end -->
+
+
+        <!-- opisaniya_start -->
+
+        <section id="opisaniya">
+
+          <div class="slider-box">
+            <h2 class="product-heading">Описание</h2>
+            <p class="opisaniya__text">
+              Мультистайлер Dyson Airwrap Complete Long в цветe Vinca blue и Rose Бесплатная доставка по ТАШКЕНТУ!!!
+              <br>
+              100% оригинал С новыми цилиндрами для завивки и волнения в обоих направлениях, щетками для контроля <br>
+              и придания формы, а также многофункциональной сушилкой для разглаживания Coanda для <br>
+              сушки,разглаживания и сокрытия разлетающихся волос 3 В комплектацию входят 30-мм цилиндрические <br>
+              насадки Airwrap для завивки, 40-мм цилиндрические насадки Airwrap для завивки
+              <br><br>
+
+              Круглая щетка для создания объема, Мягкая щетка для выпрямления, Жесткая щетка для выпрямление <br>
+              Особенности фена В комплекте Чехол для хранения Термостойкий коврик Щетка для очистки Для длинных <br>
+              до груди или более длинных волос. Пoдxoдит для разных типoв вoлoc.
+              <br><br>
+
+              Сoздaние лoконoв и волн. Pазглаживaниe. Высушивaние вoлос. Без экстpeмальныx тeмперaтур. В последней <br>
+              версии 2022 Года появились новые насадки, такие как: - обновлённый цилиндр для завивки, <br>
+              предусматривающий поток воздуха в двух направлениях, то есть больше не нужно переставлять насадки. По <br>
+              вопросам пишите в телеграм на номер
+            </p>
+          </div>
+
+        </section>
+
+        <!-- opisaniya_end -->
+
+
+        <!-- prodaves_start -->
+
+        <section id="prodaves">
+
+          <div class="slider-box">
+            <h2 class="product-heading">Продавец</h2>
+
+
+
+            <div class="prodaves-box">
+              <div class="prodaves__profil__box">
+                <img src="../img/prodaves.png" class="prodaves__img" alt="">
+
+                <div class="prodaves__box__inner">
+                  <p class="prodaves__name">Малика Абдурахимова</p>
+                  <p class="prodaves__id">ID: 1326547</p>
+                </div>
+              </div>
+
+              <a href="tel:998712007007" class="prodaves__call">+998 71 200 70 07</a>
+            </div>
+
+
+          </div>
+
+        </section>
+
+        <!-- prodaves_end -->
+
+      </div>
+
+      <!-- grid-item1_end -->
+
+
+      <!-- grid-item2_start -->
+
+      <div class="grid-item item2">
+
+        <!-- prodaves_start -->
+
+        <section id="prodaves prodaves_profile">
+
+          <div class="slider-box grid_section">
+
+            <div class="prodaves__profil__box">
+              <img src="../img/prodaves.png" class="prodaves__img" alt="">
+
+              <div class="prodaves__box__inner">
+                <p class="prodaves__name">Малика Абдурахимова</p>
+                <p class="prodaves__id">ID: 1326547</p>
+              </div>
+            </div>
+
+            <a href="tel:998712007007" class="prodaves__call">+998 71 200 70 07</a>
+          </div>
+
+        </section>
+
+        <section id="prodaves map">
+
+          <div class="slider-box grid_section">
+            <div>
+
+              <p class="product-heading">Местоположение</p>
+              <hr>
+
+            </div>
+            <p class="prodaves__id">г.Ташкент, ул.Олмачи 1-й проезд 13 дом</p>
+            <br>
+            <a href="../index.html" class="podat-zayavku-btn all_obyvleniya">Все объявления</a>
+            <br>
+            <div class="item2-card">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3808029281763!2d69.32429407596356!3d41.32233210002806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef52db39fa473%3A0xc110d0e77f029eda!2sOlmachi%20mahalasi!5e0!3m2!1sru!2sus!4v1694394210226!5m2!1sru!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+
+      <!-- prodaves_end -->
+
+
+    </div>
+
+    <!-- grid-item2_end -->
+
+    <!-- usloviya_start -->
+    <section id="usloviya">
+
+        <p class="usloviya__text">77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает <br>
+          покупки и продажи, связывая продавцов с потенциальными клиентами. </p>
+     
+          <ul class="usloviya__list">
+
+            <li class="usloviya__item"><img class="usloviya__item__img" src="../img/symbol.svg" alt="symbol">Доска
+              объявлений</li>
+            <li class="usloviya__item"><img class="usloviya__item__img" src="../img/symbol.svg" alt="symbol">Условия
+              пользования</li>
+            <li class="usloviya__item"><img class="usloviya__item__img" src="../img/symbol.svg" alt="symbol"><a
+                class="usloviya__link" href="tel:998885005000">+998 88 500 50 00</a></li>
+  
+          </ul>
+        
+       
+    </section>
+    <!-- usloviya_end -->
+
+  </main>
+  <!-- main_end -->
+
+
+
+  <!-- footer__start -->
+
+  <footer id="footer">
+      <div class="footer__general__box">
+        <div class="footer__box">
+          <a class="footer__link__site" href="https://www.77.uz">© 77.uz</a>
+          <p class="footer__box__text"> 2023. Все права защищены</p>
+        </div>
+
+        <div class="uic__logo">
+          <a href="https://uic.group/"><img src="../img/uicLogo.svg" class="uic__logo_img" alt=""></a>
+          <img src="./img/uicGroup.svg" class="uic__group_img" alt="">
+        </div>
+      </div>
+  </footer>
+
+  <!-- footer__end -->
+</div>
+
+  <script src="./card.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/language.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

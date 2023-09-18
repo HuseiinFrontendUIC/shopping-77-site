@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>77.uz</title>
+
+  <!-- fontAwesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- box icon css -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <!-- header_start -->
+    <header id="header">
+      <nav class="header__nav nav">
+
+        <!-- languageСall_start -->
+
+        <div class="dropdownCall-general-box">
+
+          <!-- dropdown_language_start -->
+
+          <div class="mt-10">
+            <button class="dropdownLanguage" id="btn">
+              <img src="./img/russianFlag.png" class="ruFlag" alt="userImg">
+              <p class="languageText">Русский</p>
+              <p class="languageText languageText-responsive">Ру</p>
+              <i class="bx bx-chevron-down" id="arrow"></i>
+            </button>
+
+            <div class="dropdownLanguage-box" id="dropdown">
+
+              <a href="../index.html" class="dropdownLanguage-linkBox">
+                <img src="./img/russianFlag.png" class="ruFlag" alt="exit">
+                <p class="languageText">Русский</p>
+                <p class="languageText languageText-responsive">Ру</p>
+              </a>
+
+              <hr class="dropdown_hr">
+
+              <a href="../index.html" class="dropdownLanguage-linkBox">
+                <img src="./img/flaguz.png" class="ruFlag" alt="exit">
+                <p class="languageText">O’zbekcha</p>
+                <p class="languageText languageText-responsive">O'z</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- dropdown_language_end -->
+
+          <!-- nav_call_start -->
+          <a class="nav__call" href="tel:+998885005000">
+            <img class="nav__call__img" src="./img/phone.svg" alt="call"> +998 88 500 50 00
+          </a>
+
+          <!-- nav_call_end -->
+
+        </div>
+
+        <!-- languageСall_end -->
+
+
+
+
+        <a href="/" class="nav-logo-ink nav-logo">
+          <img src="./img/logo.jpg" alt="logo" class="nav-logo__img">
+        </a>
+
+        <div class="btnGroups">
+          <button class="btn show-btn" id="show-btn">
+            <p class="voytiTextHeader">Войти</p> <img src="./img/exit.svg" alt="arrow" class="arrow">
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header_end -->
+
+
+
+    <!-- MODAL_start -->
+
+    <div class="wrapper">
+      <div class="modal hidden" id="modal">
+        <!-- MODAL HEADER -->
+
+        <div class="modal-header">
+          <h3 class="modal-title">Подать заявку</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <p class="modal__text">
+          Войти в систему чтобы торговать в системе
+        </p>
+        <br>
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+          <form action="">
+            <label for="name">
+              Ф.И.О.
+              <br>
+              <input type="text" class="modalInput" placeholder="Введите полное имя" id="name" name="name"
+                required max-length="15" minlength="4">
+            </label>
+            <br>
+
+            <label for="product">
+              Название продукта
+              <br>
+              <input type="text" class="modalInput" placeholder="Введите название продукта" id="product"
+                name="product" required max-length="15" minlength="4">
+            </label>
+            <br>
+
+
+            <label for="pet-select">Категория</label>
+            <br>
+            <select name="pets" id="pet-select" class="category_modal modalInput">
+              <option value="">Выберите категорию</option>
+              <option value="Холодильники" class="option-modal">Холодильники</option>
+              <option value="Телевизоры" class="option-modal">Телевизоры</option>
+              <option value="Наушники и аксессуары" class="option-modal">Наушники и аксессуары</option>
+              <option value="Кухонная мебель" class="option-modal">Кухонная мебель</option>
+              <option value="Телефоны" class="option-modal">Телефоны</option>
+              <option value="Бытовая техника" class="option-modal">Бытовая техника</option>
+            </select>
+            <br>
+            <label for="number">
+              Номер телефона
+              <br>
+
+              <input type="number" class="modalInput" placeholder="+998 00-000-00-00" id="number"
+                name="numberPhone" required max="15" min="12">
+            </label>
+            <br>
+            <label for="email">
+              Электронная почта
+              <br>
+
+              <input type="email" class="modalInput" placeholder="example@uic.group" id="email" name="email"
+                required max-length="15" minlength="4">
+            </label>
+            <br>
+            <a href="./zayavku.html" class="podat-zayavku-btn">Подать заявку</a>
+
+            <p class="modal_btn_text">Если вы продавец, войдите на платформу</p>
+
+          </form>
+
+          <button id="myBtn" class="podat-zayavku-btn voyti_btn">Войти</button>
+
+          <!-- voyti_btn_start -->
+
+
+
+
+        </div>
+      </div>
+      <div id="myModal" class="modal hidden">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-box">
+            <h2 class="modal-title">Добро пожаловать!</h2>
+            <span class="close">&times;</span>
+          </div>
+
+          <p class="modal__text">Войти в систему чтобы торговать в системе</p>
+          <br>
+
+          <form name="login">
+            <label for="name">
+              Логин
+              <br>
+              <input type="text" class="modalInput" placeholder="Введите логин" required id="name" name="id"
+                maxlength="15" minlength="4">
+            </label>
+            <br>
+
+            <label for="product">
+              Пароль
+              <br>
+              <input name="pass" class="modalInput" type="password" value="uicGroup" id="myInput" maxlength="15"
+                minlength="8" required>
+              <!-- <i class='bx bxs-low-visio/n' ></i> -->
+              <i class="fa-solid fa-eye-low-vision" id="showeye"></i>
+
+            </label>
+
+
+            <a href="./password.html" class="zabil_password">Забыли пароль?</a>
+
+            <input type="button" class="podat-zayavku-btn" value="Войти" onClick="pasuser(this.form)">
+
+            <p class="modal_btn_text">Хотите стать продавцом?</p>
+
+            <button type="submit" class="podat-zayavku-btn voyti_btn" id="btnProfile">Подать заявку</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <!-- The Modal -->
+
+
+    <!-- voyti_btn_start -->
+
+    <!-- OVERLAY -->
+    <div class="overlay hidden" id="overlay">
+
+    </div>
+
+    <!-- MODAL_end -->
+
+    <!-- zabil_password_start -->
+
+
+
+    <!-- main_start -->
+
+    <main id="main">
+      <!-- search_start -->
+
+      <section id="search">
+
+        <div class="searchBackColor">
+
+          <div class="searchInputBtnBox">
+            <input type="text" id="searchbar" placeholder="Что вы ищите?">
+            <button id="searchBtn" type="submit">Поиск</button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- product show start -->
+      <div id="announcements">
+
+      </div>
+      <!-- product show start -->
+
+
+      <!-- search_end -->
+
+      <!-- category_start -->
+
+      <section id="category">
+        <h2 class="category__title">Категории</h2>
+        <p class="category__text">Вы можете найти все категории, которые вам нужны от покупателя</p>
+        <div class="category__general__box" id="list">
+        </div>
+      </section>
+
+      <!-- category_end -->
+
+
+      <!-- obyavleniya__section__start -->
+
+      <section id="obyavleniya">
+        <h2 class="category__title obyavleniya__title">Объявления</h2>
+        <p class="category__text obyavleniya__text">Вы можете найти все категории, которые вам нужны от покупателя</p>
+
+        <div class="obyavleniya__general__box">
+        </div>
+
+        <button id="obyavleniya__btn__zagruzit">
+          Загрузить больше
+          <img src="./img/bottomDropdown.svg" class="bottomDropdown" alt="">
+        </button>
+
+      </section>
+
+      <!-- obyavleniya__section__end -->
+
+
+      <!-- usloviya_start -->
+      <section id="usloviya">
+          <img src="./img/underLogo.png" alt="logo" class="usloviya__logo__img">
+          <p class="usloviya__text">
+            77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает 
+            <br>
+            покупки и продажи, связывая продавцов с потенциальными клиентами.
+           </p>
+
+          <ul class="usloviya__list">
+              
+            <li class="usloviya__list__box"> 
+                <li class="usloviya__item">
+                  <img class="usloviya__item__img" src="./img/symbol.svg" alt="symbol">
+                  Доска объявлений
+                </li>
+
+                <li class="usloviya__item">
+                  <img class="usloviya__item__img" src="./img/symbol.svg" alt="symbol">
+                  Условия пользования
+                </li>
+              </li>
+
+            <li class="usloviya__item">
+              <img class="usloviya__item__img" src="./img/symbol.svg" alt="symbol">
+              <a class="usloviya__link" href="tel:998885005000">
+                +998 88 500 50 00
+              </a>
+            </li>
+
+          </ul>
+      </section>
+
+      <!-- usloviya_end -->
+
+    </main>
+
+    <!-- main_end -->
+
+    <!-- footer__start -->
+    <footer id="footer">
+     
+        <div class="footer__general__box">
+          <div class="footer__box">
+           
+            <a class="footer__link__site" href="https://www.77.uz">
+              © 77.uz
+            </a>
+            
+            <p class="footer__box__text">
+               2023. Все права защищены
+            </p>
+
+          </div>
+
+          <div class="uic__logo">
+            <a href="https://uic.group/">
+              <img src="./img/uicLogo.svg" class="uic__logo_img" alt="">
+            </a>
+
+            <img src="./img/uicGroup.svg" class="uic__group_img" alt="">
+          </div>
+        </div>
+    </footer>
+    <!-- footer__end -->
+
+  </div>
+
+
+  <script src="./api/category.js"></script>
+  <script src="./api/obyavleniya.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/toggle.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

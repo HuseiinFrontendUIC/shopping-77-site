@@ -1,0 +1,221 @@
+.grid-container{
+ display: grid;
+ grid-template-columns: 300px 1fr;
+ grid-template-areas: "profile cards";
+ grid-gap: 50px;
+}
+
+.grid-item-1{
+ grid-area: profile;
+ min-height: 300px;
+ justify-content: center;
+ display: flex;
+}
+
+.grid-item-2{
+ grid-area: cards;
+
+}
+
+.user-cards{
+ grid-template-columns: repeat(3, 1fr);
+}
+
+@media(max-width:1200px) {
+  .user-cards {
+   grid-template-columns: repeat(2, 1fr) !important;
+  }
+ }
+ 
+ @media(max-width:920px) {
+  .obyavleniya__inner {
+   width: 250px;
+  }
+ 
+  .obyavleniya__img {
+   width: 230px;
+  }
+ 
+  .obyavleniya__heading {
+   font-size: 14px;
+  }
+ 
+  .obyavleniya__timer {
+   font-size: 12px;
+  }
+ 
+  .obyavleniya__tel {
+   font-size: 14px;
+  }
+ 
+  .obyavleniya__price {
+   font-size: 16px;
+  }
+ 
+  .obyavleniya__price__span {
+   font-size: 14px;
+  }
+ 
+ }
+ 
+ @media  (min-width:769px) and (max-width:850px) {
+  .obyavleniya-heading-create{
+   display: block;
+  }
+  .obyavleniya-heading{
+    text-align: center;
+   }
+  .obyavleniya-link{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 26px;
+    width: 300px;
+    padding: 10px 24px;
+   }
+   .usloviya__item, .usloviya__link{
+    font-size: 15px;
+   }
+   .usloviya__text {
+    text-align: center;
+  }
+.slider-box{
+  width: 300px;
+}
+  .obyavleniya__inner {
+   width: 220px;
+   height: 430px;
+  }
+ 
+  .obyavleniya__img {
+   width: 200px;
+   height: 150px;
+  }
+ 
+  .obyavleniya__heading {
+   font-size: 14px;
+  }
+ 
+  .obyavleniya__timer {
+   font-size: 12px;
+  }
+ 
+  .obyavleniya__tel {
+   font-size: 14px;
+  }
+ 
+  .obyavleniya__price {
+   font-size: 16px;
+  }
+ 
+  .obyavleniya__price__span {
+   font-size: 14px;
+  }
+ 
+ }
+
+@media (max-width:768px) {
+ .grid-container{
+   grid-template-areas: "profile" "cards";
+   grid-template-columns: 1fr;
+   grid-gap: 10px;
+ }
+ .userImg-header,.btnName{
+   display: none;
+  }
+  .bx-chevron-down{
+    display: none;
+  }
+  .exitImg{
+   display: block;
+  }
+ .user-cards{
+  grid-template-columns: repeat(1, 1fr);
+ }
+ .grid-profil-box-exit{
+  display: none;
+ }
+ .slider-box{
+  min-height: 200px;
+ }
+ .obyavleniya-heading-create{
+  display: block;
+ }
+ .obyavleniya-heading{
+  text-align: center;
+ }
+ .obyavleniya-link{
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 26px;
+  width: 300px;
+  padding: 10px 24px;
+ }
+.usloviya__logo__img{
+  position: relative;
+  left: 0%;
+  right: 0%;
+}
+ .usloviya__text{
+  text-align: center;
+  position: relative;
+  left: 0px;
+ }
+.usloviya__list{
+
+display: flex !important;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 0px;
+}
+.usloviya__item{
+  font-size: 10px;
+}
+.usloviya__item a{
+  font-size: 10px;
+}
+ .user-cards{
+  align-self: center;
+ }
+
+ .footer__link__site{
+  display: none;
+ }
+ #header{
+  position: relative;
+  left: 0px;
+ }
+
+ /* personal box start */
+ .personal-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .personal__inner__box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .personal__contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .personal__contact a{
+  width: 100%;
+  line-height: 1.1;
+ }
+
+.exit_btn{
+  display: none;
+}
+
+}
+

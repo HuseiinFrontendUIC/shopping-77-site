@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+#header {
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.slider-box {
+  padding: 25px;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  margin-bottom: 40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(54, 53, 53, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/* product_name */
+.product-chaining {
+  margin-top: 40px;
+  color: #8E9297;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-heading {
+  color: #16191D;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.time_location {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.kornealli__location {
+  width: 150px;
+}
+
+.sena_calBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.podat-zayavku-btn-corneali {
+  position: relative;
+  left: 160px;
+}
+
+/* opisaniya_start */
+.opisaniya__text {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* opisaniya_end */
+
+/* prodaves_start */
+
+.prodaves-box {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prodaves__profil__box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.prodaves__img {
+  width: 48px;
+  height: 48px;
+}
+
+.prodaves__name,
+.prodaves__call {
+  color: #16191D;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.prodaves__id {
+  color: #63676C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* prodaves_end */
+
+.grid-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item1 {
+  width: 85vw;
+  position: relative;
+  margin-right: 20px;
+}
+
+.item2 {
+  width: 20vw;
+}
+
+.item2-card {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+
+.big__img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.small_img {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.all_obyvleniya {
+  border-radius: 8px;
+  background: #EAEDF0;
+  color: #16191D;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  width: 180px;
+  height: 40px;
+}
+@media (min-width:1000px) and (max-width:1250px) {
+
+  .grid-container {
+    width: 90vw;
+    justify-content: center;
+  }
+
+  .item1 {
+    width: 65vw;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .item2 {
+    width: 35vw;
+
+  }
+
+  .small_img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .podat-zayavku-btn-corneali {
+    position: relative;
+    left: 40px;
+    width: 250px;
+  }
+
+  .usloviya__item,
+  .usloviya__link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:0px) and (max-width:991px) {
+  .grid-container {
+    width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .item1 {
+    width: 80vw;
+  }
+
+  .item2 {
+    width: 80vw;
+  }
+
+  #prodaves {
+    display: none;
+  }
+
+  .usloviya__item,
+  .usloviya__link {
+    font-size: 15px;
+  }
+
+  .podat-zayavku-btn-corneali {
+    position: relative;
+    left: 180px;
+    width: 250px;
+  }
+}
+
+
+
+@media (min-width:769px) and (max-width:950px) {
+  .podat-zayavku-btn-corneali {
+    position: relative;
+    left: 120px;
+    width: 250px;
+  }
+}
+
+@media (min-width:0px) and (max-width:767px) {
+  .sena_calBtn {
+    display: block;
+  }
+
+  .podat-zayavku-btn-corneali {
+    position: relative;
+    left: -60px;
+    width: 250px;
+  }
+
+  .obyavleniya__price {
+    font-size: 20px;
+  }
+
+  .obyavleniya__price__span {
+    font-size: 18px;
+  }
+
+  .category__title {
+    font-size: 28px;
+  }
+
+  .small_img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .slider-box {
+    width: 700px;
+  }
+
+  .all_obyvleniya {
+    display: none;
+  }
+
+  .obyavleniya__general__box {
+    position: relative;
+    left: 120px;
+
+    grid-template-columns: repeat(2, auto);
+
+  }
+
+  .usloviya__logo__img {
+    width: 123px;
+    height: 65px;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 150px;
+  }
+
+  .next {
+    left: 340px;
+  }
+
+  .obyavleniya-link {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 26px;
+    width: 300px;
+    padding: 10px 24px;
+  }
+
+  .slider-box {
+    width: 400px;
+  }
+
+  .big__img {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+@media (min-width:0px) and (max-width:768px){
+  .footer__general__box{
+  display: flex;  
+  justify-content: center;  
+  gap: 60px;
+  }
+  .uic__group_img{
+   display: none;
+  }
+
+
+
+  .usloviya__logo__img{
+    position: relative;
+    left: 0%;
+    right: 0%;
+  }
+   .usloviya__text{
+    text-align: center;
+    position: relative;
+    left: 0px;
+   }
+  .usloviya__list{
+  
+  display: flex !important;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0px;
+  }
+  .usloviya__item{
+    font-size: 10px;
+  }
+  .usloviya__item a{
+    font-size: 10px;
+  }
+   .user-cards{
+    align-self: center;
+   }
+  
+   .footer__link__site{
+    display: none;
+   }
+   #header{
+    position: relative;
+    left: 0px;
+   }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User</title>
+
+  <!-- fontAwesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- box icon css -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <!-- link normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+
+  <!-- link css -->
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!-- link user css -->
+  <link rel="stylesheet" href="./user.css">
+  
+  <!-- link grid css -->
+  <link rel="stylesheet" href="./grid.css">
+</head>
+
+<body>
+
+
+  
+  <div class="container">
+    <!-- header_start -->
+  
+    
+    <header id="header">
+      <nav class="header__nav nav">
+        
+        <!-- languageСall_start -->
+
+                <div class="dropdownCall-general-box">
+
+                  <!-- dropdown_language_start -->
+        
+                  <div class="mt-10">
+                    <button class="dropdownLanguage" id="btnLanguage">
+                      <img src="../img/russianFlag.png" class="ruFlag" alt="userImg">
+                      <p class="languageText">Русский</p>
+                      <p class="languageText languageText-responsive">Ру</p>
+                      <i class="bx bx-chevron-down" id="arrowLanguage"></i>
+                    </button>
+
+        
+                    <div class="dropdownLanguage-box" id="dropdownLanguageBox">
+        
+                      <a href="../index.html" class="dropdownLanguage-linkBox">
+                        <img src="../img/russianFlag.png" class="ruFlag" alt="exit">
+                        <p class="languageText">Русский</p>
+                        <p class="languageText languageText-responsive">Ру</p>
+                      </a>
+        
+                      <hr class="dropdown_hr">
+        
+                      <a href="../index.html" class="dropdownLanguage-linkBox">
+                        <img src="../img/flaguz.png" class="ruFlag" alt="exit">
+                        <p class="languageText">O’zbekcha</p>
+                        <p class="languageText languageText-responsive">O'z</p>
+                      </a>
+                    </div>
+                  </div>
+        
+                  <!-- dropdown_language_end -->
+        
+                  <!-- nav_call_start -->
+                  <a class="nav__call" href="tel:+998885005000">
+                    <img class="nav__call__img" src="../img/phone.svg" alt="call"> +998 88 500 50 00
+                  </a>
+        
+                  <!-- nav_call_end -->
+        
+                </div>
+        
+                <!-- languageСall_end -->
+        
+        
+        
+        
+                <a href="/" class="nav-logo-ink nav-logo">
+                  <img src="../img/logo.jpg" alt="logo" class="nav-logo__img">
+                </a>
+    
+    
+                <button class="btn" id="btn">
+                  <img src="../img/logout.svg" alt="" class="exitImg">
+                  <img src="../img/userImg.jpg" class="userImg userImg-header" alt="userImg">
+                  <h2 class="btnName">Huseiin Urinboyev</h2>
+                  <i class="bx bx-chevron-down" id="arrow"></i>
+                </button>
+        
+        
+                <div class="dropdown" id="dropdown">
+                  <a href="../index.html">
+                    <img src="../img/logout.svg" class="exit" alt="exit">
+                    <p class="viyti">Выйти</p>
+                  </a>
+                </div>
+
+        
+        <!-- header_end -->
+      </nav>
+    </header>
+
+  <!-- header_end -->
+
+
+<!-- main start -->
+
+  <main>
+
+    <!-- profil_box_start -->
+  
+      <div class="profil-box profil">
+        <p class="profil__general__text">Главная</p>
+        <img class="profil__general__img" src="../img/circle.svg" alt="">
+        <p class="profil__general__text__profil">Профиль</p>
+      </div>
+    
+    <!-- profil_box_end -->
+
+
+    <section id="obyavleniya-profil">
+
+      <!-- grid_start -->
+    
+
+        <div class="grid-container">
+
+
+          <!-- grid-item1_start -->
+          <div class="grid-item grid-item-1">
+            <div class="slider-box">
+
+              <div class="grid-profil-box">
+                <img class="userImg profil_img" src="../img/userImg.jpg" alt="">
+                <p class="profilName-text">Huseiin <br> Urinboyev</p>
+
+              </div>
+              <hr class="profilLine">
+
+              <div class="profil-obyavlenya-box">
+                <a class="grid-profil-box" href="./user.html">
+                  <img src="../img/gridMenu.svg" class="gridMenuImg" alt="">
+                  <p class="gridMenu-text">Мои объявления</p>
+                </a>
+                <a class="grid-profil-box" href="./personal.html">
+                  <img src="../img/user-profile.svg" class="userProfilImg" alt="">
+                  <p class="userProfil-text">Персональные данные</p>
+                </a>
+              </div>
+
+              <hr class="profilLine">
+
+              <a class="grid-profil-box grid-profil-box-exit" href="../index.html">
+                <img src="../img/logout.svg" class="profil-logout-img" alt="">
+                <p class="profil-logout-text">Выход</p>
+              </a>
+
+            </div>
+
+            <!-- prodaves_end -->
+
+          </div>
+          <!-- grid-item1_end -->
+
+          <!-- grid-item2_start -->
+
+          <div class="grid-item grid-item-2">
+
+            <div class="obyavleniya-heading-create">
+              <h2 class="obyavleniya-heading">Мои объявления</h2>
+
+              <a href="" class="obyavleniya-link">
+                Создать объявление
+                <img src="../img/plus.svg" class="plus-img" alt="">
+              </a>
+
+            </div>
+
+            <div class="obyavleniya__general__box user-cards"></div>
+
+
+          </div>
+
+        </div>
+
+        <!-- grid-item2_end -->
+
+      
+
+      <!-- grid_end -->
+
+    </section>
+
+          <!-- usloviya_start -->
+          <section id="usloviya">
+            <img src="../img/underLogo.png" alt="logo" class="usloviya__logo__img">
+            <p class="usloviya__text">
+              77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает 
+              <br>
+              покупки и продажи, связывая продавцов с потенциальными клиентами.
+             </p>
+  
+            <ul class="usloviya__list">
+                
+              <li class="usloviya__list__box"> 
+                  <li class="usloviya__item">
+                    <img class="usloviya__item__img" src="../img/symbol.svg" alt="symbol">
+                    Доска объявлений
+                  </li>
+  
+                  <li class="usloviya__item">
+                    <img class="usloviya__item__img" src="../img/symbol.svg" alt="symbol">
+                    Условия пользования
+                  </li>
+                </li>
+  
+              <li class="usloviya__item">
+                <img class="usloviya__item__img" src="../img/symbol.svg" alt="symbol">
+                <a class="usloviya__link" href="tel:998885005000">
+                  +998 88 500 50 00
+                </a>
+              </li>
+  
+            </ul>
+        </section>
+  
+        <!-- usloviya_end -->
+
+  </main>
+
+  <!-- main end. -->
+
+  <!-- footer__start -->
+  <footer id="footer">
+    
+      <div class="footer__general__box">
+        <div class="footer__box">
+          <a class="footer__link__site" href="https://www.77.uz">© 77.uz</a>
+          <p class="footer__box__text"> 2023. Все права защищены</p>
+        </div>
+
+        <div class="uic__logo">
+          <a href="https://uic.group/"><img src="../img/uicLogo.svg" class="uic__logo_img" alt=""></a>
+          <img src="../img/uicGroup.svg" class="uic__group_img" alt="">
+        </div>
+      </div>
+
+
+  </footer>
+ <!-- footer__end -->
+
+</div>
+
+  <script src="../api/category.js"></script>
+  <script src="../api/obyavleniya.js"></script>
+  <script src="../js/toggle.js"></script>
+  <script src="../js/language.js"></script>
+  <script src="./user.js"></script>
+</body>
+
+</html>
